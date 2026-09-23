@@ -1,0 +1,68 @@
+/* ---------- Variáveis (cores e fontes) ---------- */
+:root {
+    --fonte-texto: "Inter", sans-serif;
+
+    --cor-texto: #1d1d1f;
+    --cor-texto-claro: #f5f5f7;
+    --cor-fundo-claro: #f5f5f7;
+    --cor-fundo-escuro: #000;
+    --cor-aviso: #6e6e73;
+    --cor-aviso-escuro: #86868b;
+    --cor-azul: #0071e3;
+    --cor-azul-hover: #0076df;
+    --cor-link: #0066cc;
+    --cor-link-escuro: #2997ff;
+}
+
+/* ---------- Reset básico ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-size: 17px;
+    line-height: 1.48;
+    letter-spacing: -0.02em;
+    color: var(--cor-texto);
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
+}
+
+main {
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.cabecalho-nav {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.cabecalho-nav-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    margin: 0 -8px;
+    list-style: none;
+}
